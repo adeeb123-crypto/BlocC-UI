@@ -131,6 +131,12 @@ body {
     .moving-cards-box{
       background: border-box;
     }
+
+    .arrow-img{
+      display: inline;
+    
+    }
+
 } 
 
 @media (min-width: 768px) {
@@ -181,6 +187,11 @@ body {
 
     .moving-cards-box{
       background: border-box;
+    }
+
+    .arrow-img{
+      display: inline;
+      margin-left: 25rem;;
     }
 }
 @media (min-width: 1024px) {

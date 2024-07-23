@@ -173,8 +173,8 @@ export default function Home() {
 
       <div className="hero-flex-section w-full min-h-screen">
         <div className="flex-div w-full p-4 text-center border border-gray-200 rounded-lg shadow sm:p-8 dark:bg-gray-800 dark:border-gray-700 h-auto min-h-[500px]">
-          <Image
-            src="/arrow-9.png"
+          <img
+            src="https://i.postimg.cc/GhnMRZgT/Arrow-9.png"
             className="arrow-img lg:right-0 img-logo h-20"
             alt="Flowbite Logo"
             width={80}
