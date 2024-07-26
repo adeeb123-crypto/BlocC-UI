@@ -29,7 +29,10 @@ const config: Config = {
             transform: "translate(calc(-50% - 0.5rem))",
           },
         },
-      },  
+      }, 
+      borderRadius: {
+        'md':'3rem'
+      }, 
     },
   },
   plugins: [

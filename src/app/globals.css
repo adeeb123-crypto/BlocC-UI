@@ -46,6 +46,14 @@ body {
   /* background-color: #002B3E ; */
 }
 
+.custom-card-color{
+  background-color: #002B3E;
+}
+
+.custom-text-color{
+  color: #EBF9FF;
+}
+
 /* .nav-items li:hover{
   background: #002B3E !important;
   color: #EBF9FF !important;
@@ -137,6 +145,62 @@ body {
     
     }
 
+    .flex-div{
+      height: 100vh;
+    }
+
+    .about-grid{
+      display: inline-block;
+      text-align: center;
+    }
+
+    .custom-card1{
+      position: relative;
+    }
+    
+    @property --angle{
+      syntax: "<angle>";
+      initial-value: 0deg;
+      inherits: false;
+    }
+    
+    
+    .custom-card1::after, .custom-card1::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 102%;
+    /* background-image: conic-gradient(#ff4545,#00ff99,#006aff,#ff0095,#ff4545); */
+    background-image: conic-gradient(from var(--angle), transparent, #002B3E);
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    z-index: -1;
+    padding: 8rem;
+    border-radius: 3rem;
+    animation: 4s spin linear infinite;
+    }
+
+    .card3{
+      display: none;
+    }
+    
+    @keyframes spin{
+    from{
+      --angle: 0deg;
+    }
+    to{
+     --angle: 360deg;
+    }
+    
+    }
+
+    .custom-card1::before{
+      filter: blur(1.5rem);
+      opacity: 0.7;
+    }
+
+
 } 
 
 @media (min-width: 768px) {
@@ -193,6 +257,56 @@ body {
       display: inline;
       margin-left: 25rem;;
     }
+
+    .about-grid{
+      display: inline-block;
+      text-align: center;
+    }
+
+    .custom-card1{
+      position: relative;
+    }
+
+    @property --angle{
+      syntax: "<angle>";
+      initial-value: 0deg;
+      inherits: false;
+    }
+    
+    
+    .custom-card1::after, .custom-card1::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 102%;
+    /* background-image: conic-gradient(#ff4545,#00ff99,#006aff,#ff0095,#ff4545); */
+    background-image: conic-gradient(from var(--angle), transparent, #002B3E);
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    z-index: -1;
+    padding: 7.22rem;
+    border-radius: 3rem;
+    animation: 5s spin linear infinite;
+    }
+    
+    @keyframes spin{
+    from{
+      --angle: 0deg;
+    }
+    to{
+     --angle: 360deg;
+    }
+    
+    }
+
+    .custom-card1::before{
+      filter: blur(1.5rem);
+      opacity: 0.7;
+    }
+
+
+    
 }
 @media (min-width: 1024px) {
 /* .custom-phone-div{
@@ -306,6 +420,53 @@ background: #002B3E;
     background: border-box;
 }
 
+.custom-card1{
+  position: relative;
+}
+
+@property --angle{
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+
+.custom-card1::after, .custom-card1::before{
+content: '';
+position: absolute;
+height: 100%;
+width: 102%;
+/* background-image: conic-gradient(#ff4545,#00ff99,#006aff,#ff0095,#ff4545); */
+background-image: conic-gradient(from var(--angle), transparent, #002B3E);
+top: 50%;
+left: 50%;
+translate: -50% -50%;
+z-index: -1;
+padding: 7.22rem;
+border-radius: 3rem;
+animation: 5s spin linear infinite;
+}
+
+@keyframes spin{
+from{
+  --angle: 0deg;
+}
+to{
+ --angle: 360deg;
+}
+
+}
+
+.about-grid{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.custom-card1::before{
+  filter: blur(1.5rem);
+  opacity: 0.7;
+}
 
 }
 
