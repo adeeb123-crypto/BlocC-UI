@@ -146,14 +146,18 @@ body {
     }
 
     .flex-div{
-      height: 100vh;
+      height: 128vh;
+     
+      margin-bottom: 2rem;
     }
 
     .about-grid{
       display: inline-block;
       text-align: center;
-      background: none;
-      zoom: 0.97;
+      height: 20vh;
+      /* background: black !important; */
+    
+      border-radius: 3rem;
     }
 
     .custom-card1{
@@ -172,13 +176,13 @@ body {
     position: absolute;
     height: 100%;
     width: 102%;
-    /* background-image: conic-gradient(#ff4545,#00ff99,#006aff,#ff0095,#ff4545); */
+   
     background-image: conic-gradient(from var(--angle), transparent, #002B3E);
     top: 50%;
     left: 50%;
     translate: -50% -50%;
     z-index: -1;
-    padding: 7.3rem;
+    padding: 7.9rem;
     border-radius: 3rem;
     animation: 4s spin linear infinite;
     }
@@ -197,10 +201,10 @@ body {
     
     }
 
-    .custom-card1::before{
+    /* .custom-card1::before{
       filter: blur(1.5rem);
       opacity: 0.7;
-    }
+    } */
 
 
 } 
