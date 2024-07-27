@@ -84,6 +84,8 @@ const testimonials = [
 export default function Home() {
   return (
     <>
+
+    <link rel="shortcut icon" href="./favicon.svg" type="image/x-icon" /> 
       <nav className="nav-color sticky top-0 z-50 bg-white shadow border-gray-200 dark:bg-gray-900 text-white">
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
           <a
